@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- NAV-Bar -->
-    <nav class="navbar-expand-lg bg-light py-4">
+    <nav class="navbar-expand-lg bg-light py-4 sticky-top">
       <a href="#" class="navbar-brand ml-3">Logo GOes Here</a>
       <div class="float-right mr-3">
         <!-- Need to Set up a Hamburger -->
@@ -76,7 +76,7 @@
           <h2>How Does KCBP Work?</h2>
         </div>
       </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md mb-3">
             <div class="card">
@@ -205,14 +205,14 @@
       </div>
     </section>
     <section class="rest-section mb-5">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row my-5">
           <div class="col text-center">
             <h2>Participating Resturants</h2>
           </div>
         </div>
         <!-- Turn the list of res into a rotator -->
-        <div class="row">
+        <div class="row mx-1">
           <div class="col-md">
             <div class="row">
               <ul class="list-group list-group-horizontal">
@@ -270,10 +270,20 @@
             list of links
           </div>
           <div class="col-md">
-            Buy now
+            <a href="#" class="btn btn-primary">BUTTON!</a>
           </div>
           <div class="col-md">
-            email submit
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="email address"
+                class="form-control"
+                aria-label="Email address"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">Subscribe</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
