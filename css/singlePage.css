@@ -1,7 +1,12 @@
 /* global Styles */
 
-a {
+.nav-link {
+  color: black;
   text-decoration: none;
+}
+
+/* hero box */
+.hero-box {
 }
 
 /* VCP About Section */
@@ -18,7 +23,6 @@ a {
 .jason-kander-img {
   width: auto;
   height: 15rem;
-  border-radius: 75%;
 }
 
 /* resturant section */
