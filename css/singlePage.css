@@ -1,0 +1,35 @@
+/* global Styles */
+
+a {
+  text-decoration: none;
+}
+
+/* VCP About Section */
+
+.vcp-section {
+  background-color: rgb(223, 223, 223);
+}
+
+.vcp-section-photo {
+  width: auto;
+  height: 20rem;
+}
+
+.jason-kander-img {
+  width: auto;
+  height: 15rem;
+  border-radius: 75%;
+}
+
+/* resturant section */
+
+.res-photo {
+  height: 4rem;
+  width: auto;
+}
+
+/* footer section */
+
+.footer-section {
+  background-color: rgb(223, 223, 223);
+}
