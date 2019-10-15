@@ -1,0 +1,28 @@
+{
+  "name": "kcbp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msurface/kcbp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msurface/kcbp/issues"
+  },
+  "homepage": "https://github.com/msurface/kcbp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.21.1",
+    "mongoose": "^5.7.5",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.3"
+  }
+}
