@@ -101,3 +101,17 @@ exports.updateCustomer = async (req, res) => {
     console.error(err.message);
   }
 };
+
+// DELETE one customer
+exports.deleteCustomer = async (req, res) => {
+  try {
+    // finding the customer and deleting
+    const customer = await Customer.findByIdAndDelete(req.params.id);
+
+    // sending to the client
+    res.send(customer);
+  } catch (err) {
+    res.status(400).send('Not able to delete this customer, try again?');
+    console.error(err.message);
+  }
+};

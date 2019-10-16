@@ -18,4 +18,8 @@ router.post('/', customerController.newCustomer);
 // @ /api/customer/:id
 router.put('/:id', customerController.updateCustomer);
 
+// DELETE one customer
+// @ /api/customer/:id
+router.delete('/:id', customerController.deleteCustomer);
+
 module.exports = router;
