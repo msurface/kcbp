@@ -1,4 +1,5 @@
 const Customer = require('../models/Customer');
+const inventory = require('../models/Inventory');
 
 // GET all customers
 exports.allCustomers = async (req, res) => {
@@ -74,21 +75,25 @@ exports.newCustomer = async (req, res) => {
 // PUT update one customer
 exports.updateCustomer = async (req, res) => {
   // name validation
-  if (!req.body.name || req.body.name.length < 3) {
-    res.status(400).send('Name must be at least 3 characters, please update!');
-  }
+  // if (!req.body.name || req.body.name.length < 3) {
+  //   res.status(400).send('Name must be at least 3 characters, please update!');
+  // }
 
-  console.log(req.params.id);
+  console.log('customer id', req.params.id);
 
   try {
     // querying the database
-    let customer = await Customer.findByIdAndUpdate(req.params.id, {
-      name: req.body.name,
-      email: req.body.email,
-      address: req.body.address,
-      phone: req.body.phone,
-      hasPurchased: false
-    });
+    let customer = await Customer.findByIdAndUpdate(
+      req.params.id,
+      {
+        name: req.body.name,
+        email: req.body.email,
+        address: req.body.address,
+        phone: req.body.phone,
+        hasPurchased: false
+      },
+      { omitUndefined: true }
+    );
 
     // validate customer
     if (!customer)
@@ -98,6 +103,31 @@ exports.updateCustomer = async (req, res) => {
     res.send(customer);
   } catch (err) {
     res.status(400).send('Could not update, try again?');
+    console.error(err.message);
+  }
+};
+
+// PUT update hasPurchased
+exports.customerPurchase = async (req, res) => {
+  // query the database and only update
+  console.log('customer id', req.params.id);
+
+  try {
+    let customer = await Customer.findByIdAndUpdate(
+      req.params.id,
+      { hasPurchased: true },
+      { omitUndefined: true }
+    );
+
+    if (!customer)
+      return res.status(400).send('Could not finalize purchase, try again.');
+
+    // TODO -- decrease inventory by total purchases made here
+
+    // send the customer to the client
+    res.send(customer);
+  } catch (err) {
+    res.status(400).send('Could not finalize purchase');
     console.error(err.message);
   }
 };

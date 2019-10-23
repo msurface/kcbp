@@ -1,5 +1,6 @@
 const home = require('./routes/home');
 const customer = require('./routes/customer');
+const admin = require('./routes/admin');
 const express = require('express');
 const app = express();
 const helmet = require('helmet');
@@ -34,6 +35,7 @@ app.use('/', home);
 // /api/customer
 app.use('/api/customer', customer);
 // /api/admin
+app.use('/api/admin', admin);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`App is listening on Port ${PORT}`));

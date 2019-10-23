@@ -18,6 +18,10 @@ router.post('/', customerController.newCustomer);
 // @ /api/customer/:id
 router.put('/:id', customerController.updateCustomer);
 
+// PUT update purchase of customer
+// @ /api/customer/purchase/:id
+router.put('/purchase/:id', customerController.customerPurchase);
+
 // DELETE one customer
 // @ /api/customer/:id
 router.delete('/:id', customerController.deleteCustomer);
