@@ -6,11 +6,11 @@ import '../css/aboutUs.css';
 
 const AboutUs = props => {
   return (
-    <section className="about-us">
+    <section className="about-us py-5">
       <h2 className="text-center my-5">
         About KCBP & Veterans Community Project
       </h2>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row my-5">
           <div className="col-lg">
             <div class="media">
