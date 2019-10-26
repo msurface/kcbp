@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/register.css';
+import Button from './utilities/Button';
 
 const Register = props => {
   return (
@@ -31,9 +32,7 @@ const Register = props => {
                   placeholder="Password"
                 />
               </div>
-              <button type="submit" class="btn btn-success my-2">
-                Register
-              </button>
+              <Button text="Register" btnColor="success" />
             </form>
           </div>
         </div>
