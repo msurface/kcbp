@@ -1,11 +1,12 @@
 import React from 'react';
-import '../css/register.css';
+import HeadingTwo from './utilities/HeadingTwo';
 import Button from './utilities/Button';
+import '../css/register.css';
 
 const Register = props => {
   return (
     <section className="register py-5">
-      <h2 className="text-center">Register</h2>
+      <HeadingTwo className="text-center" text="Register" />
       <div className="row">
         <div className="container">
           <div className="col-lg">

@@ -1,12 +1,13 @@
 import React from 'react';
 import '../css/howTo.css';
 import holderImg from '../images/vcp.jpg';
+import HeadingTwo from './utilities/HeadingTwo';
 
 const HowTo = props => {
   // CHANGE CARDS TO A CARD DECK
   return (
     <section className="how-to py-5">
-      <h2 className="text-center mb-5">How To Use BBQ Passport</h2>
+      <HeadingTwo className="text-center mb-5" text="How To Use BBQ Passport" />
       <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-lg-4 d-flex justify-content-center my-2">

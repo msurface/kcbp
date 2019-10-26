@@ -2,14 +2,16 @@ import React from 'react';
 import vcpImage from '../images/vcp.jpg';
 import kcbpImage from '../images/kcbp-about-us-image.jpg';
 import partnerPhoto from '../images/comingHome.jpg';
+import HeadingTwo from './utilities/HeadingTwo';
 import '../css/aboutUs.css';
 
 const AboutUs = props => {
   return (
     <section className="about-us py-5">
-      <h2 className="text-center my-5">
-        About KCBP & Veterans Community Project
-      </h2>
+      <HeadingTwo
+        text="About KCBP & Veterans Community Project"
+        className="text-center my-5"
+      />
       <div className="container-fluid">
         <div className="row my-5">
           <div className="col-lg">
