@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './utilities/Button';
 
 const HeroBox = props => {
   return (
@@ -12,12 +13,8 @@ const HeroBox = props => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className="hero-box_btn text-center">
-          <button type="button" className="btn btn-success mx-2">
-            Call to Action
-          </button>
-          <button type="button" className="btn btn-secondary mx-2">
-            Services
-          </button>
+          <Button text="Call To Action" btnColor="success" />
+          <Button text="How To" btnColor="secondary" />
         </div>
       </div>
     </div>
