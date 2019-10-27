@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadingTwo from './utilities/HeadingTwo';
+import HeadingTwo from './utilities/headings/HeadingTwo';
 import Button from './utilities/Button';
 import '../css/register.css';
 

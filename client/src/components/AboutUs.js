@@ -2,15 +2,17 @@ import React from 'react';
 import vcpImage from '../images/vcp.jpg';
 import kcbpImage from '../images/kcbp-about-us-image.jpg';
 import partnerPhoto from '../images/comingHome.jpg';
-import HeadingTwo from './utilities/HeadingTwo';
+import HeadingTwo from './utilities/headings/HeadingTwo';
 import Paragraph from './utilities/Paragraph';
-import HeadingFive from './utilities/HeadingFive';
+import HeadingFive from './utilities/headings/HeadingFive';
+import Image from './utilities/Image';
 import '../css/aboutUs.css';
 
 const AboutUs = props => {
   const aboutUsInfo = {
     cardOne: {
       h5: 'Kansas City BBQ PassPort',
+      img: kcbpImage,
       Para1:
         'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purusodio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
       Para2:
@@ -18,6 +20,7 @@ const AboutUs = props => {
     },
     cardTwo: {
       h5: 'Veterans Community Project',
+      img: vcpImage,
       Para1:
         'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purusodio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
       Para2:
@@ -25,6 +28,7 @@ const AboutUs = props => {
     },
     cardThree: {
       h5: 'Our Partnership',
+      img: partnerPhoto,
       Para1:
         'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purusodio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
       Para2:
@@ -42,10 +46,10 @@ const AboutUs = props => {
         <div className="row my-5">
           <div className="col-lg">
             <div className="media">
-              <img
-                src={kcbpImage}
+              <Image
+                src={aboutUsInfo.cardOne.img}
                 className="align-self-center mr-3"
-                alt="..."
+                alt="KCBP Photo"
               />
               <div className="media-body">
                 <HeadingFive className="mt-0" text={aboutUsInfo.cardOne.h5} />
@@ -66,10 +70,10 @@ const AboutUs = props => {
                 <Paragraph text={aboutUsInfo.cardTwo.Para1} />
                 <Paragraph className="mb-0" text={aboutUsInfo.cardTwo.Para2} />
               </div>
-              <img
-                src={vcpImage}
+              <Image
+                src={aboutUsInfo.cardTwo.img}
                 className="align-self-center ml-3"
-                alt="..."
+                alt="VCP Photo"
               />
             </div>
           </div>
@@ -77,10 +81,10 @@ const AboutUs = props => {
         <div className="row my-5">
           <div className="col-lg">
             <div className="media">
-              <img
-                src={partnerPhoto}
+              <Image
+                src={aboutUsInfo.cardThree.img}
                 className="align-self-center mr-3"
-                alt="..."
+                alt="KCBP & VCP Partnership Photo"
               />
               <div className="media-body">
                 <HeadingFive className="mt-0" text={aboutUsInfo.cardThree.h5} />
