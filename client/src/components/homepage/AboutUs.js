@@ -2,11 +2,11 @@ import React from 'react';
 import vcpImage from '../images/vcp.jpg';
 import kcbpImage from '../images/kcbp-about-us-image.jpg';
 import partnerPhoto from '../images/comingHome.jpg';
-import HeadingTwo from './utilities/headings/HeadingTwo';
-import Paragraph from './utilities/Paragraph';
-import HeadingFive from './utilities/headings/HeadingFive';
-import Image from './utilities/Image';
-import '../css/aboutUs.css';
+import HeadingTwo from '../utilities/headings/HeadingTwo';
+import Paragraph from '../utilities/Paragraph';
+import HeadingFive from '../utilities/headings/HeadingFive';
+import Image from '../utilities/Image';
+import '../../css/aboutUs.css';
 
 const AboutUs = props => {
   const aboutUsInfo = {

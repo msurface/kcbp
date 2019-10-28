@@ -1,9 +1,9 @@
 import React from 'react';
-import holderImg from '../images/vcp.jpg';
-import HeadingTwo from './utilities/headings/HeadingTwo';
-import Paragraph from './utilities/Paragraph';
-import Image from './utilities/Image';
-import '../css/howTo.css';
+import holderImg from '../../images/vcp.jpg';
+import HeadingTwo from '../utilities/headings/HeadingTwo';
+import Paragraph from '../utilities/Paragraph';
+import Image from '../utilities/Image';
+import '../../css/howTo.css';
 
 const HowTo = props => {
   const cardInfo = {
