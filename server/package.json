@@ -1,0 +1,33 @@
+{
+  "name": "kcbp",
+  "version": "1.0.0",
+  "description": "KCBP App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msurface/kcbp.git"
+  },
+  "keywords": [
+    "Full",
+    "Stack",
+    "App"
+  ],
+  "author": "Michael Surface",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msurface/kcbp/issues"
+  },
+  "homepage": "https://github.com/msurface/kcbp#readme",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
